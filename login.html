@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | HelpHub</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="static/js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img class="brand-icon" src="static/images/helphub-logo.png" alt="HelpHub logo">
+    <span>Help<span class="accent">Hub</span></span>
+  </a>
+  <nav class="main-nav">
+    <a href="services.html">Find Services</a>
+    <a href="register.html">Create account</a>
+  </nav>
+</header>
+
+<main class="page-main wrap narrow">
+  <div class="page-intro">
+    <span class="eyebrow">WELCOME BACK</span>
+    <h1>Log in to HelpHub.</h1>
+    <p>This is a frontend demo. Use the dashboard links to preview the different roles.</p>
+  </div>
+
+  <div class="form-card">
+    <div class="form-grid">
+      <label class="field full">
+        Email address
+        <input id="loginEmail" type="email" placeholder="you@example.com">
+      </label>
+
+      <label class="field full">
+        Password
+        <input id="loginPassword" type="password" placeholder="Demo only">
+      </label>
+    </div>
+
+    <button class="btn btn-primary btn-large btn-full" id="loginButton" type="button">
+      Log in (demo)
+    </button>
+
+    <p class="form-footnote">OR PREVIEW A DASHBOARD</p>
+
+    <div class="demo-role-grid">
+      <a class="btn btn-ghost" href="customer-dashboard.html">Customer</a>
+      <a class="btn btn-ghost" href="provider-dashboard.html">Provider</a>
+      <a class="btn btn-ghost" href="admin-dashboard.html">Admin</a>
+    </div>
+
+    <p class="form-footnote">
+      Real authentication is not implemented yet. Do not enter a real password.
+    </p>
+  </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard | HelpHub</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="static/js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img class="brand-icon" src="static/images/helphub-logo.png" alt="HelpHub logo">
+    <span>Help<span class="accent">Hub</span></span>
+  </a>
+  <nav class="main-nav">
+    <a href="services.html">Services</a>
+    <a class="active" href="admin-dashboard.html">Admin dashboard</a>
+  </nav>
+  <div class="header-actions">
+    <span class="pill pill-info">Prototype admin</span>
+  </div>
+</header>
+
+<main class="dashboard wrap">
+  <aside class="side-nav">
+    <span class="eyebrow">ADMIN SPACE</span>
+    <a class="side-active" href="admin-dashboard.html">Overview</a>
+    <a href="register.html?role=provider">Provider application demo</a>
+    <a href="services.html">Listings preview</a>
+  </aside>
+
+  <section class="dashboard-content">
+    <div class="dash-heading">
+      <div>
+        <span class="eyebrow">PLATFORM MANAGEMENT</span>
+        <h1>Admin dashboard</h1>
+        <p class="muted">Review activity in the planned admin workflow.</p>
+      </div>
+      <span class="pill pill-warm">Demo only</span>
+    </div>
+
+    <div class="notice notice-warm">
+      <strong>Important:</strong> This prototype does not authenticate administrators,
+      verify documents, or approve real provider applications.
+    </div>
+
+    <div class="stats-grid">
+      <article class="stat-card">
+        <span>Provider applications</span>
+        <strong id="adminApplicationCount">0</strong>
+        <small>Saved in this browser</small>
+      </article>
+      <article class="stat-card">
+        <span>Customer requests</span>
+        <strong id="adminRequestCount">0</strong>
+        <small>Saved in this browser</small>
+      </article>
+      <article class="stat-card">
+        <span>Sample listings</span>
+        <strong>6</strong>
+        <small>Illustrative provider cards</small>
+      </article>
+    </div>
+
+    <div class="content-card">
+      <div class="card-heading">
+        <div>
+          <h2>Demo provider applications</h2>
+          <p>Applications created in this browser.</p>
+        </div>
+        <button class="btn btn-ghost btn-small" id="refreshAdmin" type="button">
+          Refresh
+        </button>
+      </div>
+
+      <div id="adminApplications" class="table-wrap"></div>
+    </div>
+
+    <div class="content-card">
+      <div class="card-heading">
+        <div>
+          <h2>Platform quality checklist</h2>
+          <p>Items for the Flask backend stage.</p>
+        </div>
+      </div>
+
+      <div class="checklist">
+        <p>○ Secure authentication and role-based permissions</p>
+        <p>○ Admin-only approval and rejection actions</p>
+        <p>○ Document review and accurate verification labels</p>
+        <p>○ Report handling and an audit trail</p>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

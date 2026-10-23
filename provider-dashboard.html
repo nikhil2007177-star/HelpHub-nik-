@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Provider Dashboard | HelpHub</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="static/js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img class="brand-icon" src="static/images/helphub-logo.png" alt="HelpHub logo">
+    <span>Help<span class="accent">Hub</span></span>
+  </a>
+  <nav class="main-nav">
+    <a href="services.html">Explore services</a>
+    <a class="active" href="provider-dashboard.html">Provider dashboard</a>
+  </nav>
+  <div class="header-actions">
+    <a class="btn btn-primary btn-small" href="register.html?role=provider">Apply to join</a>
+  </div>
+</header>
+
+<main class="dashboard wrap">
+  <aside class="side-nav">
+    <span class="eyebrow">PROVIDER SPACE</span>
+    <a class="side-active" href="provider-dashboard.html">Overview</a>
+    <a href="register.html?role=provider">Provider application</a>
+    <a href="customer-dashboard.html">Customer view</a>
+  </aside>
+
+  <section class="dashboard-content">
+    <div class="dash-heading">
+      <div>
+        <span class="eyebrow">YOUR WORKSPACE</span>
+        <h1>Provider dashboard</h1>
+        <p class="muted">Manage your profile and explore example opportunities.</p>
+      </div>
+      <a class="btn btn-primary" href="register.html?role=provider">Complete profile ↗</a>
+    </div>
+
+    <div class="notice notice-warm">
+      <strong>Demo status:</strong> Applications and job responses are not sent to real customers.
+    </div>
+
+    <div class="stats-grid">
+      <article class="stat-card">
+        <span>Profile status</span>
+        <strong class="stat-text">Draft</strong>
+        <small>Complete registration to apply</small>
+      </article>
+      <article class="stat-card">
+        <span>Potential requests</span>
+        <strong>3</strong>
+        <small>Sample opportunities only</small>
+      </article>
+      <article class="stat-card">
+        <span>Completed jobs</span>
+        <strong>0</strong>
+        <small>Demo history</small>
+      </article>
+    </div>
+
+    <div class="content-card">
+      <div class="card-heading">
+        <div>
+          <h2>Sample opportunities</h2>
+          <p>Example requests to illustrate the provider workflow.</p>
+        </div>
+        <span class="pill pill-info">Demo data</span>
+      </div>
+
+      <div class="opportunity-list">
+        <article class="opportunity">
+          <div class="opportunity-top">
+            <span class="pill">Home Repairs</span>
+            <span class="pill pill-warm">Today</span>
+          </div>
+          <h3>Kitchen tap leaking</h3>
+          <p class="muted small">Area: Sample locality · Budget not provided</p>
+          <p>Customer needs help inspecting and repairing a leaking tap.</p>
+          <div class="opportunity-actions">
+            <button class="btn btn-primary btn-small"
+              data-demo-action="This demo request has no real customer attached.">
+              Express interest
+            </button>
+            <button class="btn btn-ghost btn-small"
+              data-demo-action="Quote submission will be connected to the backend later.">
+              Prepare quote
+            </button>
+          </div>
+        </article>
+
+        <article class="opportunity">
+          <div class="opportunity-top">
+            <span class="pill">Vehicle</span>
+            <span class="pill">Flexible</span>
+          </div>
+          <h3>Two-wheeler service enquiry</h3>
+          <p class="muted small">Area: Sample locality · Estimate requested</p>
+          <p>Customer wants to understand service options and expected charges.</p>
+          <div class="opportunity-actions">
+            <button class="btn btn-primary btn-small"
+              data-demo-action="This demo request has no real customer attached.">
+              Express interest
+            </button>
+            <button class="btn btn-ghost btn-small"
+              data-demo-action="Quote submission will be connected to the backend later.">
+              Prepare quote
+            </button>
+          </div>
+        </article>
+
+        <article class="opportunity">
+          <div class="opportunity-top">
+            <span class="pill">Daily Needs</span>
+            <span class="pill">Flexible</span>
+          </div>
+          <h3>Furniture assembly</h3>
+          <p class="muted small">Area: Sample locality · Photos optional</p>
+          <p>Customer needs help assembling a small furniture item.</p>
+          <div class="opportunity-actions">
+            <button class="btn btn-primary btn-small"
+              data-demo-action="This demo request has no real customer attached.">
+              Express interest
+            </button>
+            <button class="btn btn-ghost btn-small"
+              data-demo-action="Quote submission will be connected to the backend later.">
+              Prepare quote
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="content-card">
+      <div class="card-heading">
+        <div>
+          <h2>Provider Growth Coach</h2>
+          <p>Suggestions for improving your profile.</p>
+        </div>
+      </div>
+
+      <div class="coach-list">
+        <p><span>01</span> Add a clear list of services you offer.</p>
+        <p><span>02</span> Include relevant work samples or references.</p>
+        <p><span>03</span> Keep your service area and availability updated.</p>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

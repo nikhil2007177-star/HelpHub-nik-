@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Dashboard | HelpHub</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="static/js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img class="brand-icon" src="static/images/helphub-logo.png" alt="HelpHub logo">
+    <span>Help<span class="accent">Hub</span></span>
+  </a>
+  <nav class="main-nav">
+    <a href="services.html">Find Services</a>
+    <a class="active" href="customer-dashboard.html">My Dashboard</a>
+  </nav>
+  <div class="header-actions">
+    <a class="btn btn-primary btn-small" href="request.html">+ New Request</a>
+  </div>
+</header>
+
+<main class="dashboard wrap">
+  <aside class="side-nav">
+    <span class="eyebrow">CUSTOMER SPACE</span>
+    <a class="side-active" href="customer-dashboard.html">Overview</a>
+    <a href="request.html">Create request</a>
+    <a href="services.html">Find providers</a>
+    <a href="repair-history.html">FixHistory</a>
+  </aside>
+
+  <section class="dashboard-content">
+    <div class="dash-heading">
+      <div>
+        <span class="eyebrow">YOUR HELPHUB</span>
+        <h1>Customer dashboard</h1>
+        <p class="muted">Your requests and service history in one place.</p>
+      </div>
+      <a class="btn btn-primary" href="request.html">Create a request ↗</a>
+    </div>
+
+    <div class="stats-grid">
+      <article class="stat-card">
+        <span>Open requests</span>
+        <strong id="customerOpenCount">0</strong>
+        <small>Awaiting progress</small>
+      </article>
+      <article class="stat-card">
+        <span>Quotes received</span>
+        <strong id="customerQuoteCount">0</strong>
+        <small>Demo responses</small>
+      </article>
+      <article class="stat-card">
+        <span>Completed jobs</span>
+        <strong id="customerCompletedCount">0</strong>
+        <small>Service records</small>
+      </article>
+    </div>
+
+    <div class="content-card">
+      <div class="card-heading">
+        <div>
+          <h2>Your requests</h2>
+          <p>Review requests created in this browser.</p>
+        </div>
+        <a class="text-link" href="request.html">+ Add new</a>
+      </div>
+      <div id="customerRequests" class="request-list"></div>
+    </div>
+
+    <div class="content-card">
+      <div class="card-heading">
+        <div>
+          <h2>Quick actions</h2>
+          <p>Continue where you left off.</p>
+        </div>
+      </div>
+
+      <div class="quick-action-grid">
+        <a href="services.html">
+          <span>⌕</span>
+          <b>Find a provider</b>
+          <small>Explore service categories</small>
+        </a>
+        <a href="request.html">
+          <span>＋</span>
+          <b>Build a service request</b>
+          <small>Describe a problem clearly</small>
+        </a>
+        <a href="repair-history.html">
+          <span>▤</span>
+          <b>Open FixHistory</b>
+          <small>Review service records</small>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

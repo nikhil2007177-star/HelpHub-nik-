@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create a Request | HelpHub</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="static/js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img class="brand-icon" src="static/images/helphub-logo.png" alt="HelpHub logo">
+    <span>Help<span class="accent">Hub</span></span>
+  </a>
+  <nav class="main-nav">
+    <a href="services.html">Find Services</a>
+    <a href="customer-dashboard.html">My Dashboard</a>
+  </nav>
+  <div class="header-actions">
+    <a class="btn btn-ghost btn-small" href="login.html">Log in</a>
+  </div>
+</header>
+
+<main class="page-main wrap narrow">
+  <div class="page-intro">
+    <span class="eyebrow">SMART PROBLEM-TO-JOB BUILDER</span>
+    <h1>Tell us what you need.</h1>
+    <p>Answer a few questions to create a clear service request.</p>
+  </div>
+
+  <form class="form-card" id="requestForm">
+    <div class="form-progress">
+      <span>Request details</span>
+      <span>Step 1 of 1 · Demo</span>
+    </div>
+
+    <div class="form-grid">
+      <label class="field full">
+        What kind of service do you need?
+        <select required name="category" id="requestCategory">
+          <option value="">Choose a category</option>
+          <option>Home Repairs</option>
+          <option>Vehicle</option>
+          <option>Health</option>
+          <option>Daily Needs</option>
+          <option>Emergency</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label class="field full">
+        Short title
+        <input required name="title" placeholder="e.g. Kitchen tap is leaking">
+      </label>
+
+      <label class="field full">
+        Describe the problem
+        <textarea required name="description" rows="4"
+          placeholder="Describe what happened and include useful details."></textarea>
+      </label>
+
+      <label class="field">
+        When do you need help?
+        <select name="urgency" required>
+          <option value="Flexible">Flexible</option>
+          <option value="Today">Today</option>
+          <option value="Urgent">Urgent</option>
+        </select>
+      </label>
+
+    
+<label class="field">
+    Your area
+    <input required name="area" id="requestArea" placeholder="Neighbourhood or locality">
+</label>
+
+<button type="button" class="btn btn-ghost btn-small" id="getCurrentLocation">
+    📍 Use my current location
+</button>
+
+<p id="locationMessage" class="form-footnote" aria-live="polite"></p>
+      <label class="field">
+        Preferred budget (₹)
+        <input name="budget" type="number" min="0" placeholder="Optional">
+      </label>
+
+      <label class="field">
+        Photo URL (optional)
+        <input name="photo" type="url" placeholder="https://...">
+      </label>
+    </div>
+
+    <div class="info-callout">
+      <strong>Safety note</strong>
+      <p>For immediate danger or a medical emergency, contact the appropriate local emergency service.</p>
+    </div>
+
+    <button class="btn btn-primary btn-large btn-full" type="submit">
+      Create demo request ↗
+    </button>
+
+    <p class="form-footnote">
+      This prototype saves requests in your browser only. It does not contact providers.
+    </p>
+  </form>
+</main>
+</body>
+</html>

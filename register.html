@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join HelpHub</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="static/js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img class="brand-icon" src="static/images/helphub-logo.png" alt="HelpHub logo">
+    <span>Help<span class="accent">Hub</span></span>
+  </a>
+  <nav class="main-nav">
+    <a href="services.html">Find Services</a>
+    <a href="index.html#features">About HelpHub</a>
+  </nav>
+  <div class="header-actions">
+    <a class="btn btn-ghost btn-small" href="login.html">Already registered?</a>
+  </div>
+</header>
+
+<main class="page-main wrap narrow">
+  <div class="page-intro">
+    <span class="eyebrow">JOIN THE COMMUNITY</span>
+    <h1>Create your HelpHub profile.</h1>
+    <p>Choose how you want to use HelpHub.</p>
+  </div>
+
+  <form class="form-card" id="registerForm">
+    <div class="form-grid">
+      <label class="field full">
+        I want to join as
+        <select name="role" id="registerRole" required>
+          <option value="customer">Customer</option>
+          <option value="provider">Service Provider</option>
+        </select>
+      </label>
+
+      <label class="field">
+        Full name
+        <input name="name" required autocomplete="name" placeholder="Your name">
+      </label>
+
+      <label class="field">
+        Email address
+        <input name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+      </label>
+
+      <label class="field">
+        Phone number
+        <input name="phone" type="tel" required autocomplete="tel" placeholder="Phone number">
+      </label>
+
+      <label class="field">
+        Password
+        <input name="password" type="password" required minlength="8"
+          autocomplete="new-password" placeholder="At least 8 characters">
+      </label>
+
+      <div id="providerFields" class="form-grid full">
+        <label class="field">
+          Main skill/category
+          <select name="category">
+            <option>Home Repairs</option>
+            <option>Vehicle</option>
+            <option>Health</option>
+            <option>Daily Needs</option>
+            <option>Emergency</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label class="field">
+          Years of experience
+          <input name="experience" type="number" min="0" max="70" placeholder="e.g. 3">
+        </label>
+
+        <label class="field full">
+          Services you offer
+          <input name="skills" placeholder="e.g. plumbing, tap repair">
+        </label>
+
+        <label class="field full">
+          Service area
+          <input name="area" placeholder="Areas you can serve">
+        </label>
+
+        <label class="field full">
+          Short introduction
+          <textarea name="bio" rows="3" placeholder="Describe your experience and services"></textarea>
+        </label>
+      </div>
+
+      <label class="checkbox-field full">
+        <input type="checkbox" required>
+        <span>I agree to the demo terms and understand that this frontend does not securely create a real account.</span>
+      </label>
+    </div>
+
+    <button class="btn btn-primary btn-large btn-full" type="submit">
+      Create demo profile ↗
+    </button>
+
+    <p class="form-footnote">
+      Demo only: information is stored in this browser. Do not enter real passwords or sensitive personal data.
+    </p>
+  </form>
+</main>
+</body>
+</html>

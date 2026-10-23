@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FixHistory | HelpHub</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="static/js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img class="brand-icon" src="static/images/helphub-logo.png" alt="HelpHub logo">
+    <span>Help<span class="accent">Hub</span></span>
+  </a>
+  <nav class="main-nav">
+    <a href="services.html">Find Services</a>
+    <a href="customer-dashboard.html">Dashboard</a>
+  </nav>
+  <div class="header-actions">
+    <a class="btn btn-primary btn-small" href="request.html">New request</a>
+  </div>
+</header>
+
+<main class="page-main wrap">
+  <div class="page-intro">
+    <span class="eyebrow">SERVICE RECORDS</span>
+    <h1>FixHistory</h1>
+    <p>A place for past repair records, agreed work, and future maintenance notes.</p>
+  </div>
+
+  <div class="notice">
+    The records below are examples. In the full application, FixHistory will be
+    connected to completed requests and the signed-in customer's account.
+  </div>
+
+  <div class="history-grid">
+    <article class="history-card">
+      <div class="history-icon">🔧</div>
+      <div class="history-meta">
+        <span class="pill">Home Repairs</span>
+        <span class="muted small">Example record</span>
+      </div>
+      <h3>Kitchen tap repair</h3>
+      <p class="muted">Work summary: washer inspected and replaced.</p>
+
+      <div class="history-details">
+        <span>Completion date</span><b>Sample date</b>
+        <span>Parts</span><b>Provider to record</b>
+        <span>Next step</span><b>Check for leaks</b>
+      </div>
+
+      <p class="small muted">Illustrative content; no real service was performed.</p>
+    </article>
+
+    <article class="history-card">
+      <div class="history-icon">🚗</div>
+      <div class="history-meta">
+        <span class="pill">Vehicle</span>
+        <span class="muted small">Example record</span>
+      </div>
+      <h3>Two-wheeler inspection</h3>
+      <p class="muted">Work summary: basic inspection record.</p>
+
+      <div class="history-details">
+        <span>Completion date</span><b>Sample date</b>
+        <span>Parts</span><b>Not recorded</b>
+        <span>Next step</span><b>Follow provider advice</b>
+      </div>
+
+      <p class="small muted">Illustrative content; no real service was performed.</p>
+    </article>
+  </div>
+
+  <div class="content-card">
+    <h2>How FixHistory will work</h2>
+    <p class="muted">
+      After a request is marked completed, the customer and provider can record
+      the agreed work, parts or materials, completion notes, and optional photos.
+      Future reminders should be based on recorded recommendations.
+    </p>
+  </div>
+</main>
+</body>
+</html>
