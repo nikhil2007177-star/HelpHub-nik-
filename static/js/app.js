@@ -846,3 +846,30 @@ function initCurrentLocation() {
     );
   });
 }
+
+window.initHelpHubMap = function () {
+  const mapElement = document.getElementById("serviceMap");
+
+  if (!mapElement || !window.google?.maps) return;
+
+  const center = {
+    lat: 28.4744,
+    lng: 77.5040
+  };
+
+  const map = new google.maps.Map(mapElement, {
+    center: center,
+    zoom: 13,
+    mapTypeControl: false,
+    streetViewControl: false
+  });
+
+  new google.maps.Marker({
+    position: center,
+    map: map,
+    title: "HelpHub service area"
+  });
+
+  window.helpHubMap = map;
+};
+window.dispatchEvent(new Event("helphub-app-ready"));

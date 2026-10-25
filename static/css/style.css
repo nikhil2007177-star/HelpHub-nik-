@@ -1334,3 +1334,36 @@ td small {
     grid-template-columns: 1fr;
   }
 }
+
+/* HelpHub Google Maps section */
+.map-section {
+  margin: 28px 0;
+}
+
+.map-heading {
+  margin-bottom: 14px;
+}
+
+.map-heading h2 {
+  margin: 8px 0;
+}
+
+.map-heading p {
+  color: #667085;
+  margin: 0;
+}
+
+#serviceMap {
+  width: 100%;
+  height: 420px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #edf1f4;
+  border: 1px solid #e1e6eb;
+}
+
+@media (max-width: 600px) {
+  #serviceMap {
+    height: 320px;
+  }
+}

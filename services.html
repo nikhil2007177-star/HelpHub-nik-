@@ -69,6 +69,21 @@
     Location is optional. You can search without enabling it.
   </div>
 
+<section class="map-section">
+  <div class="map-heading">
+    <div>
+      <span class="eyebrow">NEARBY ON THE MAP</span>
+      <h2>Explore services near you</h2>
+      <p>Find local service providers around your location.</p>
+    </div>
+  </div>
+
+  <div id="serviceMap" role="application"
+       aria-label="Map showing nearby service providers">
+  </div>
+</section>
+
+
   <div class="results-head">
     <div>
       <h2>Local professionals</h2>
@@ -93,5 +108,24 @@
     </div>
   </div>
 </footer>
+
+<script>
+  window.initMap = function () {
+    if (typeof window.initHelpHubMap === "function") {
+      window.initHelpHubMap();
+    } else {
+      window.addEventListener(
+        "helphub-app-ready",
+        window.initHelpHubMap,
+        { once: true }
+      );
+    }
+  };
+</script>
+
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4ihh2a_ipnDxDTvVCVPQ8ZylGa1tRNWQ&callback=initMap&loading=async">
+</script>
+
 </body>
 </html>
